@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Future Academy</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f8faff;line-height:1.6}
+nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:16px 7%;box-shadow:0 2px 15px rgba(0,0,0,.06)}
+.logo{font-size:24px;font-weight:800;color:#5b4bdb}.logo span{color:#ff6584}
+nav a{color:#263149;text-decoration:none;margin-left:25px;font-weight:600}
+nav a:hover{color:#5b4bdb}
+.hero{min-height:100vh;padding:140px 7% 70px;display:flex;align-items:center;gap:50px;background:linear-gradient(135deg,#f0edff,#fff5f7 55%,#eef9ff)}
+.hero-text{flex:1}.badge{display:inline-block;background:#e7e2ff;color:#5545c7;padding:8px 15px;border-radius:30px;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.05;margin-bottom:22px}.hero h1 span{color:#5b4bdb}
+.hero p{font-size:18px;color:#59657c;max-width:600px;margin-bottom:30px}
+.btn{display:inline-block;padding:14px 25px;border-radius:12px;text-decoration:none;font-weight:700;transition:.25s}
+.primary{background:#5b4bdb;color:white;box-shadow:0 10px 25px rgba(91,75,219,.25)}
+.primary:hover{transform:translateY(-3px)}
+.secondary{border:2px solid #ddd8ff;color:#5545c7;margin-left:10px;background:white}
+.hero-card{flex:0 0 390px;background:white;border-radius:28px;padding:28px;box-shadow:0 25px 60px rgba(55,45,120,.15)}
+.hero-card .top{background:linear-gradient(135deg,#5b4bdb,#8879f5);color:#fff;border-radius:20px;padding:25px}
+.hero-card h3{font-size:28px;margin-bottom:8px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+.stat{background:#f6f5ff;padding:15px;border-radius:15px;text-align:center}.stat b{display:block;font-size:22px;color:#5b4bdb}
+section{padding:90px 7%}.section-title{text-align:center;max-width:650px;margin:0 auto 45px}.section-title h2{font-size:40px;margin-bottom:10px}.section-title p{color:#69758a}
+.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.course{background:white;border-radius:22px;padding:28px;border:1px solid #eee;box-shadow:0 10px 30px rgba(25,30,60,.06);transition:.25s}
+.course:hover{transform:translateY(-7px);box-shadow:0 18px 40px rgba(25,30,60,.1)}
+.icon{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;background:#eeeaff;font-size:28px;margin-bottom:18px}
+.course h3{font-size:22px;margin-bottom:8px}.course p{color:#69758a;margin-bottom:15px}.course strong{color:#5b4bdb}
+.features{background:#fff}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feature{text-align:center;padding:25px;border-radius:18px;background:#f8f7ff}.feature .emoji{font-size:32px}.feature h3{margin:10px 0 5px}.feature p{font-size:14px;color:#6d778b}
+.admission{background:linear-gradient(135deg,#5545c7,#8879f5);color:white;text-align:center}.admission p{opacity:.9;max-width:650px;margin:10px auto 25px}.white{background:white;color:#5545c7}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.review{background:white;padding:25px;border-radius:20px;box-shadow:0 10px 25px rgba(20,30,60,.06)}.stars{color:#ffb400;letter-spacing:2px;margin-bottom:10px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}.contact-box{background:#fff;border-radius:24px;padding:30px;box-shadow:0 10px 30px rgba(20,30,60,.06)}.contact-box h3{font-size:26px;margin-bottom:15px}.contact-item{padding:12px 0;border-bottom:1px solid #eee}.contact-item:last-child{border:0}
+footer{background:#12172a;color:#b8bfd0;text-align:center;padding:28px 7%}footer b{color:#fff}
+@media(max-width:850px){nav{padding:14px 5%}nav div:last-child{display:none}.hero{flex-direction:column;padding:120px 6% 60px}.hero-card{width:100%;flex-basis:auto}.courses,.reviews{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}section{padding:70px 6%}}
+@media(max-width:480px){h1{font-size:42px}.feature-grid{grid-template-columns:1fr}.secondary{margin-left:0;margin-top:10px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Bright<span>Future</span> Academy</div>
+  <div>
+    <a href="#home">Home</a><a href="#courses">Courses</a><a href="#about">Why Us</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <div class="badge">🎓 Admissions Open 2026</div>
+    <h1>Learn Today.<br><span>Lead Tomorrow.</span></h1>
+    <p>Quality tuition and personal guidance for students who want better grades, stronger concepts and a brighter future.</p>
+    <a class="btn primary" href="#courses">Explore Courses</a>
+    <a class="btn secondary" href="#contact">Contact Us</a>
+  </div>
+  <div class="hero-card">
+    <div class="top">
+      <h3>Start Your Journey</h3>
+      <p>Expert teachers • Small batches • Personal attention</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>500+</b>Students</div>
+      <div class="stat"><b>95%</b>Success</div>
+      <div class="stat"><b>10+</b>Subjects</div>
+    </div>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="section-title">
+    <h2>Our Courses</h2>
+    <p>Choose the right course and build strong concepts with experienced teachers.</p>
+  </div>
+  <div class="courses">
+    <div class="course"><div class="icon">📐</div><h3>Mathematics</h3><p>Concept building, problem solving, practice tests and exam preparation.</p><strong>Classes 6–12</strong></div>
+    <div class="course"><div class="icon">🔬</div><h3>Science</h3><p>Easy explanations, important concepts, notes and complete exam preparation.</p><strong>Classes 6–12</strong></div>
+    <div class="course"><div class="icon">💻</div><h3>Computer Science</h3><p>Programming basics, computer concepts, practical learning and assignments.</p><strong>Beginner to Advanced</strong></div>
+    <div class="course"><div class="icon">📖</div><h3>English</h3><p>Grammar, vocabulary, writing skills, speaking practice and comprehension.</p><strong>All Levels</strong></div>
+    <div class="course"><div class="icon">🧪</div><h3>Physics & Chemistry</h3><p>Clear concepts, numerical practice and board/exam focused preparation.</p><strong>Classes 9–12</strong></div>
+    <div class="course"><div class="icon">🎯</div><h3>Exam Preparation</h3><p>Revision plans, mock tests, past papers and one-to-one academic guidance.</p><strong>Special Batches</strong></div>
+  </div>
+</section>
+
+<section class="features" id="about">
+  <div class="section-title"><h2>Why Choose Us?</h2><p>We focus on understanding, not just memorizing.</p></div>
+  <div class="feature-grid">
+    <div class="feature"><div class="emoji">👩‍🏫</div><h3>Expert Teachers</h3><p>Qualified and supportive teachers.</p></div>
+    <div class="feature"><div class="emoji">👥</div><h3>Small Batches</h3><p>More attention for every student.</p></div>
+    <div class="feature"><div class="emoji">📝</div><h3>Weekly Tests</h3><p>Regular tests to track progress.</p></div>
+    <div class="feature"><div class="emoji">🏆</div><h3>Better Results</h3><p>Focused preparation for exams.</p></div>
+  </div>
+</section>
+
+<section class="admission">
+  <h2>Ready to Improve Your Grades?</h2>
+  <p>Join Bright Future Academy and start learning with confidence. Limited seats available in our new batches.</p>
+  <a class="btn white" href="#contact">Enroll Now →</a>
+</section>
+
+<section>
+  <div class="section-title"><h2>What Students Say</h2><p>Real learning starts when students feel confident.</p></div>
+  <div class="reviews">
+    <div class="review"><div class="stars">★★★★★</div><p>“The teachers explain difficult topics in a very easy way. My confidence in maths improved a lot.”</p><br><b>— Ayesha, Student</b></div>
+    <div class="review"><div class="stars">★★★★★</div><p>“Small classes and regular tests really helped me prepare for my exams.”</p><br><b>— Hamza, Student</b></div>
+    <div class="review"><div class="stars">★★★★★</div><p>“Very friendly teachers and a great learning environment. Highly recommended.”</p><br><b>— Fatima, Student</b></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title"><h2>Get In Touch</h2><p>Contact us for admissions, fees and class timings.</p></div>
+  <div class="contact">
+    <div class="contact-box">
+      <h3>Contact Details</h3>
+      <div class="contact-item">📍 <b>Address:</b> Your Academy Address, Rawalpindi</div>
+      <div class="contact-item">📞 <b>Phone:</b> +92 300 1234567</div>
+      <div class="contact-item">✉️ <b>Email:</b> info@brightfutureacademy.com</div>
+      <div class="contact-item">🕒 <b>Timings:</b> Mon – Sat, 3:00 PM – 8:00 PM</div>
+    </div>
+    <div class="contact-box">
+      <h3>Start Your Admission</h3>
+      <p style="color:#69758a;margin-bottom:20px">Message us on WhatsApp for course details, fees and available seats.</p>
+      <a class="btn primary" href="https://wa.me/923001234567" target="_blank">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<footer><b>Bright Future Academy</b> — Learn Today. Lead Tomorrow. © 2026</footer>
+</body>
+</html>
